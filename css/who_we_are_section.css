@@ -1,0 +1,34 @@
+.who_{
+    background-color: var(--BluecolorDark);
+    
+}
+
+.container{
+    justify-content: space-evenly;
+}
+
+.who_contanierimg{
+    width: 70%;
+}
+
+.who_containertexts{
+    width:30%;
+    color: var(--WhiteText);
+}
+
+.who_containertexts h2, .who_containertexts p{
+    
+    color: var(--WhiteText);
+}
+
+.who_containertexts h2{
+    font-size:48px ;
+    margin-bottom: var(--marginBottomTittle);
+}
+
+.who_contanierimg{
+    width: 50%;
+    height:26em ;
+}
+
+

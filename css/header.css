@@ -1,0 +1,28 @@
+header{
+    color:var(--WhiteText);
+    
+    background-color: var(--BluecolorDark);
+}
+
+.header__container--logo img{
+    padding-top: var(--padding);
+    padding-bottom:var(--padding) ;
+}
+menu{
+    background-color: var(--Bluecolor);
+    padding: var(--padding);
+}
+
+menu img{
+    height: 33px;
+    width: auto;
+    margin-right: 1.5em;
+}
+
+
+menu a{
+    color: var(--WhiteText);
+    font-size:24px;
+    font-weight: 600;
+    font-family: 'IBM Plex Sans', sans-serif;
+}

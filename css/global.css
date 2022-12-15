@@ -1,0 +1,70 @@
+:root{
+    
+    --Yellowcolor:#FFC320;
+    --Bluecolor:#005DCB;
+    --BluecolorDark:#002A5C;
+    --Bluecolor30: rgba(0,93,203,0.2);
+    --WhiteText:#EAEFF4;
+    --padding:1.5em;
+
+    --title:'DM Serif Display', serif;
+    --texts: 'IBM Plex Sans', sans-serif;
+    --maxwith:1440px;
+    --marginBottomTittle:.5em;
+
+}
+
+body, *{
+    margin: 0;
+    box-sizing: content-box;
+    font-family: var(--texts );
+    color: var(--BluecolorDark);
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alingcenter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maxwidth{
+    max-width: var(--maxwith);
+    margin: 0 auto;
+       
+}
+
+.paddingSection{
+    padding: 3.5em 2.5em;
+}
+
+
+.paddingH{
+    padding: 3em;
+    
+}
+
+.paddingH.w{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.gridauto{
+    display: grid;
+    row-gap:2em;
+    column-gap:3.5em;
+    grid-auto-flow: columns;
+    grid-template-columns: repeat(auto-fill, 20em);
+    justify-content: center;
+}
+
+.responsive{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center;
+}
