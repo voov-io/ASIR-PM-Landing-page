@@ -1,8 +1,12 @@
-.who_{
-    background-color: var(--BluecolorDark);
+.who_> div:first-child{
+    /*background-color: var(--BluecolorDark);*/
     
 }
 
+.who_ > div:first-child{
+    background-color: var(--BluecolorDark);
+    
+}
 .container{
     justify-content: space-evenly;
 }
@@ -29,6 +33,10 @@
 .who_contanierimg{
     width: 50%;
     height:26em ;
+}
+
+.colorTextBlue{
+    color: var(--BluecolorDark)!important;
 }
 
 
