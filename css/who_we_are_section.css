@@ -26,7 +26,7 @@
 }
 
 .who_containertexts h2{
-    font-size:48px ;
+    font-size:var(--titlesize); ;
     margin-bottom: var(--marginBottomTittle);
 }
 

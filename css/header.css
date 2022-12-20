@@ -8,7 +8,7 @@ header{
     padding-top: var(--padding);
     padding-bottom:var(--padding) ;
 }
-menu{
+header menu{
     background-color: var(--Bluecolor);
     padding: var(--padding);
 }

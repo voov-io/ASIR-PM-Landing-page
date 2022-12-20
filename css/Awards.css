@@ -1,0 +1,17 @@
+.Awards{
+    background-color: var(--Greycolor);
+}
+.Awards h2{
+    text-align: center ;
+}
+.Awards__brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5em;
+    margin-top: 4.25em ;
+
+}
+.Awards__brands img{
+    max-height: 6em;
+}

@@ -23,14 +23,14 @@ main img{
 }
 
 .main__container h1{
-    font-size: 63px;
+    font-size: 3.9em;
     color: var(--BluecolorDark);
     font-family: var(--title);
     margin-bottom:.5em ;
 }
 
 .main__container p{
-    font-size: 24px;
+    font-size: 1.5em;
     font-family: var(--texts );
     margin-bottom: 1.5em;
     color: var(--BluecolorDark);
@@ -41,7 +41,7 @@ main img{
     margin-top: 2.5em;
 }
 .main__container .form__label{
-    font-size: 16px;
+    font-size: 1em;
     font-family: var(--texts );
     margin-bottom: 2em;
 }
@@ -58,7 +58,7 @@ main img{
     background-color: var(--BluecolorDark);
     border: none;
     color:var(--WhiteText);
-    font-size: 18px;
+    font-size: 1.1em;
     font-weight: bold;
     
 }

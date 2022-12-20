@@ -1,0 +1,40 @@
+.OurProperty{
+    background-color: var(--BluecolorDark);
+}
+.OurProperty h3{
+    font-weight: initial;
+}
+
+.OurProperty__list--container{
+    margin: 4.25em 0;
+    align-items: flex-start;
+}
+.OurProperty__list{
+    
+}
+.OurProperty__list--step{
+    max-width: 24em;
+    min-width: 24em;
+    margin-bottom: 1.5em;
+}
+
+.OurProperty__list--step:nth-child(2){
+    margin-left: 2em;
+}
+.OurProperty__list--step:nth-child(3){
+    margin-left: 4em;
+}
+.OurProperty__list--step:nth-child(4){
+    margin-left: 4.5em;
+}
+
+.OurProperty__list--step img{
+    height: 5.75em;
+    margin-right:2.68em;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.OurProperty__list--step h3{
+    color: white;
+}

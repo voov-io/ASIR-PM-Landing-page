@@ -5,14 +5,16 @@
     --BluecolorDark:#002A5C;
     --Bluecolor30: rgba(0,93,203,0.2);
     --Box-shadow:0px 5px 21px 0px var(--Bluecolor30);
+    --Box-shadow-comments:0px 15px 30px 0px rgba(0,0,0,0.16);
     --WhiteText:#EAEFF4;
+    --Greycolor:#EAEFF4;
     --padding:1.5em;
 
     --title:'DM Serif Display', serif;
     --texts: 'IBM Plex Sans', sans-serif;
     --maxwith:1440px;
-    --marginBottomTittle:.5em;
-
+    --marginBottomTittle:1em;
+    --titlesize: 3em;
 }
 
 body, *{
@@ -20,13 +22,37 @@ body, *{
     box-sizing: content-box;
     font-family: var(--texts );
     color: var(--BluecolorDark);
-    
+    font-size: 16px;
 }
 
 picture, figure{
     overflow: hidden;
 }
 
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.flex.between{
+    justify-content: space-between;
+}
+
+.flex.evenly{
+    justify-content: space-evenly;
+}
+
+.flex.around{
+    justify-content: space-around;
+}
+
+.flex.center{
+    justify-content: center;
+}
+
+.flex.left{
+    justify-content: left;
+}
 .horizontal{
     display: flex;
     justify-content: space-between;
@@ -35,6 +61,12 @@ picture, figure{
 .alingcenter{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+.center{
+    display: flex;
+    align-items: center;
     justify-content: center;
 }
 
@@ -73,4 +105,32 @@ picture, figure{
     height: auto;
     object-fit: contain;
     object-position: center;
+}
+
+.title{
+    font-family: var(--title);
+    font-size: var(--titlesize);
+    
+}
+.title.aligncenter{
+    text-align: center;
+}
+
+.title.left{
+    text-align: left;
+}
+.title.white{
+    color:white
+}
+
+.btn{
+    padding: 1.5em 4em;
+    color:white;
+    font-weight:bold ;
+    font-size:1em;
+}
+
+.btn.blue{
+
+    background-color: var(--Bluecolor);
 }

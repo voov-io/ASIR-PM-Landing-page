@@ -1,0 +1,28 @@
+.many_reason h2{
+    text-align: center;
+}
+.card_container{
+    margin: 4.25em 0;
+    column-gap: 3em;
+}
+.card{
+    max-width: 19.28em;
+    padding-bottom: 1.1em;
+}
+.card__img{
+    margin-bottom: 1.5em;
+}
+.card__img img{
+    width: 6.75em;
+}
+
+.card__title{
+    font-size: 1.3em;
+    color: var(--Bluecolor);
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+.card__text{
+    font-size: 1em;
+    text-align: center;
+}
