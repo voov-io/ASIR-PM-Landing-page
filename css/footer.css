@@ -1,0 +1,67 @@
+.footer{
+    background-color: var(--BluecolorDark);
+}
+
+.footer__container > div ul li, time, address, a {
+    color: white;
+    font-style: normal;
+}
+
+.footer__container > div h2 {
+    color: var(--colorBluesky);
+    text-align: left;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+.footer__container-sub img{
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+.footer__container-sub figcaption{
+    color: white;
+    /*font-size: 0.8em;*/
+}
+.container__img:last-child img{
+    width: 8em;
+    height: auto;
+}
+.footer__container--copy{
+    margin-bottom: 2em;
+    /*font-size: 0.8em;*/
+    
+}
+.gridauto.footer{
+    column-gap:1em;
+    grid-template-columns: repeat(auto-fill,14em);
+    justify-items: left;
+    box-sizing: border-box;
+    
+}
+.footer__container div:last-child{
+    box-sizing: border-box;
+}
+.footer__container-sub ul li{
+    margin-bottom: 1em;
+}
+
+.footer__form{
+    box-sizing: border-box ;
+    border: none;
+    width: 100%
+}
+.footer__form--submit{
+    margin-top: 1em;
+    border: none;
+    padding: 1em 2em;
+    width:64%;
+    cursor: pointer;
+}
+
+.footer__form--input{
+    padding: 1em 2em;
+    width: auto;
+}
+

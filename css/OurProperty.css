@@ -6,11 +6,8 @@
 }
 
 .OurProperty__list--container{
-    margin: 4.25em 0;
+    margin-top: 4.25em;
     align-items: flex-start;
-}
-.OurProperty__list{
-    
 }
 .OurProperty__list--step{
     max-width: 24em;
@@ -25,7 +22,7 @@
     margin-left: 4em;
 }
 .OurProperty__list--step:nth-child(4){
-    margin-left: 4.5em;
+    margin-left: 6em;
 }
 
 .OurProperty__list--step img{

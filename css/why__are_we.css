@@ -1,0 +1,29 @@
+.why__are_we h2{
+    margin-bottom: var(--marginBottomTittle);
+}
+.why__are_we .why__are_weList{
+    margin: 4.25em 0;
+
+}
+.why__are_we--item{
+    max-width: 20em;
+}
+.gridauto.whyarewe{
+    column-gap:1.5em;
+    grid-template-columns: repeat(auto-fill,22em);
+    justify-content: center;
+    justify-items: center;
+}
+
+.why__are_we--title{
+    text-align: center;
+    padding: 1em 2em;
+    background: var(--Bluecolor);
+    color: white;
+    margin-bottom: 2em;
+}
+
+.why__are_we--text{
+    text-align: center;
+    padding: .5em;
+}
