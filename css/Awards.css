@@ -1,17 +1,22 @@
 .Awards{
     background-color: var(--Greycolor);
 }
+
 .Awards h2{
     text-align: center ;
+    
 }
 .Awards__brands{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 5em;
-    margin-top: 4.25em ;
 
+    margin-top: 4.2em;
 }
+
 .Awards__brands img{
     max-height: 6em;
+}
+.gridauto.brands{
+    grid-template-columns: repeat(auto-fill,22em);
+    justify-content: center;
+    justify-items: center;
+    gap: 1.5em;
 }

@@ -86,3 +86,11 @@
     width: 32px;
     height: 32px;
 }
+
+@media screen and (max-width:426px) {
+    .what_our__box{
+        min-width: 18em;
+        max-width: 18em;
+        box-sizing: border-box;
+    }
+}

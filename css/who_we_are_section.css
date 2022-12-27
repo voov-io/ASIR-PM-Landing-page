@@ -39,4 +39,20 @@
     color: var(--BluecolorDark)!important;
 }
 
+@media screen and (max-width:768px) and (orientation:portrait) {
+    .who_ .container.horizontal{
+        flex-direction: column;
+    } 
+
+    .who_containertexts {
+        width: 100%;
+    }
+
+    .who_contanierimg{
+        width: 100%;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        height: fit-content;
+    }
+}
 

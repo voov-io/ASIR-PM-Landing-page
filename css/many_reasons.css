@@ -26,3 +26,20 @@
     font-size: 1em;
     text-align: center;
 }
+
+@media screen and (max-width:769px)  {
+    .card_container {
+        column-gap: 1.5em;
+    }
+}
+
+@media screen and (max-width:426px){
+    .card_container.alingCenter{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1025px) {
+    .gridauto.brands{
+        
+    }
+}

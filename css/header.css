@@ -19,10 +19,26 @@ menu img{
     margin-right: 1.5em;
 }
 
+.menu {
+    display: flex;
+}
 
 menu a{
     color: var(--WhiteText);
     font-size:24px;
     font-weight: 600;
     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+@media screen and (max-width:426px) {
+    .header__container.horizontal{
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    header .menu{
+        justify-content: center;
+        align-items: center;
+    }
 }
