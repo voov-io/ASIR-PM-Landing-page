@@ -5,9 +5,9 @@ main{
     /*height: 100vh;*/
 }
 
-main img{
+.video-container {
 
-    max-width: 100%;
+    max-width: 50%;
     width: 50%;
     object-fit: contain;
     object-position: bottom;
@@ -79,13 +79,16 @@ main img{
     margin-bottom: 4em;
 }
 
+
+
 @media screen and (max-width:769px) and (max-width:426px) and (orientation:portrait) {
     .main{
         flex-direction: column-reverse;
         align-items: center;
     }
 
-    main img {
+    .video-container {
+        max-width: 100%;
         width: 100%;
         margin-bottom: 2em;
     }
