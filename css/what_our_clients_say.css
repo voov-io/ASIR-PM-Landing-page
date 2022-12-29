@@ -2,13 +2,25 @@
     background-color: var(--Greycolor);
 }
 
+
 .what_our--container{
     padding-top:5em ;
     padding-bottom: 5em;
 }
 .what_our--scroll{
+   display: flex;
+   align-items: center;
+   position: relative;
+}
+
+.scroll-container::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-container{
+
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     column-gap: 1.5em;
     overflow-x: scroll;
@@ -17,13 +29,8 @@
     position: relative;
     max-width: 100%;
     white-space: normal;
-   
 }
-
-.what_our--scroll::-webkit-scrollbar{
-    display: none;
-}
-.what_our--scroll div{
+.what_our--scroll .menuscroll{
    display: flex;
    justify-content: space-between;
    position: absolute;
@@ -31,12 +38,12 @@
     width: 100%;
 
 }
-.what_our--scroll div img{
+.what_our--scroll .menuscroll img{
     padding: 2.3em 0;
     background-color: var(--Bluecolor30);
     cursor: pointer;
 }
-.what_our--scroll div img:first-child{
+.what_our--scroll .menuscroll img:first-child{
     
    
     width: 50px;
@@ -45,7 +52,7 @@
     transform: rotate(180deg);
 }
 
-.what_our--scroll div img:last-child{
+.what_our--scroll .menuscroll img:last-child{
 
 
     width: 50px;

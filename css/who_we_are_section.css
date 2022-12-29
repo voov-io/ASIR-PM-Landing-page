@@ -1,8 +1,3 @@
-.who_> div:first-child{
-    /*background-color: var(--BluecolorDark);*/
-    
-}
-
 .who_ > div:first-child{
     background-color: var(--BluecolorDark);
     
@@ -39,7 +34,7 @@
     color: var(--BluecolorDark)!important;
 }
 
-@media screen and (max-width:768px) and (orientation:portrait) {
+@media screen and (max-width:768px) {
     .who_ .container.horizontal{
         flex-direction: column;
     } 
