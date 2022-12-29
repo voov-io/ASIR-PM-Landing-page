@@ -1,5 +1,12 @@
+@font-face {
+    font-family:'DM Serif Display' ;
+    src: url("/font/DM_Serif_Display/DMSerifDisplay-Regular.ttf") format("ttf")
+}
+@font-face {
+    font-family:'IBM Plex Sans' ;
+    src: url("/font/IBM_Plex_Sans/IBMPlexSans-Bold.ttf") format("ttf")
+}
 :root{
-    
     --Yellowcolor:#FFC320;
     --Bluecolor:#005DCB;
     --BluecolorDark:#002A5C;
@@ -24,6 +31,7 @@ body, *{
     font-family: var(--texts );
     color: var(--BluecolorDark);
     list-style: none;
+    scroll-behavior: smooth;
 }
 ul, li{
     font-size: 16px;

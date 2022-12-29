@@ -3,7 +3,7 @@
 }
 
 .gridauto.OurProperty{
-    grid-template-columns: repeat(auto-fill,minmax(auto, 30em));
+    grid-template-columns: repeat(auto-fill,minmax(auto, 31em));
     justify-content: center;
     justify-items: center;
     

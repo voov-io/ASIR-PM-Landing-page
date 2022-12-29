@@ -5,59 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atlantic Sotheby's International Realty</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
     <meta name="title" content="Atlantic Sotheby's International Realty">
     <meta name="description" content="Atlantic Sotheby’s International Realty is a full-service real estate brokerage and property management firm headquartered in Virginia Beach. We proudly serve the entire greater Hampton Roads area.">
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Property Listings, Property Management,full-service real estate">
+
 </head>
 <body>
     <header class="header ">
         <div class="header__container horizontal maxwidth">
             <figure class="header__container--logo">
-                <img loading="lazy" src="/images/Atlantic Sotheby's International Realty.svg" alt="Atlantic Sotheby's  Logo">
+                <img loading="lazy" src="images/Atlantic Sotheby's International Realty.svg" alt="Atlantic Sotheby's  Logo">
             </figure>
             <menu class="menu horizontal">
-                    <img loading="lazy" src="/icons/Group 2@2x.png" alt="icon phone">
+                <a href="tel:+(757)777-9898">
+                    <img loading="lazy" src="icons/Group 2@2x.webp" alt="icon phone">
                     <a href="tel:(757)777-9898">757.777.9898</a>
+
+                </a>
             </menu>
         </div>
     </header>
-    <main class="main maxwidth">
+    <main id="main" class="main maxwidth">
         <div class="main__container ">
             <h1>Owners, Get Your<br>
             Free Rental Analysis</h1>
             <p> We'll rent your house out in 2 weeks... or your first month of management is free.</p>
             <b class="form__label">Enter the street address of your rental property to get your free quote</b>
-            <form class="form horizontal" action="email">
-                <br>
-                <br>
-                <input class="form__input" type="email" name="email" placeholder="Address of your rental home...">
-                <input class="form__submit"  type="submit" value="Get a Free Quote">
+            <form class="form horizontal" action="https://example.com" method="post">
+                <input class="form__input" type="email" name="email" placeholder="Address of your rental home..." required>
+                <input id="submit" class="form__submit"  type="submit" value="Get a Free Quote">
             </form>
         </div>
-        <video id="video-main" class="video-container" width="320" height="240" controls poster="/images/poster-main-video.png">
+        <video data-aos="fade-up" id="video-main" preload="none" class="video-container" width="320" height="240" controls poster="images/poster-main-video.webp">
             <source src="video/Whatourclientssayaboutus-desktop.mp4" type="video/mp4">
             <source src="video/What our clients say about us - mobile.mp4" type="video/mp4">
         </video>        
     </main>
     <div class="btn_arrow alingCenter">
-        <img loading="lazy" src="/icons/Ellipse 1.svg" alt="icon arrow down">
+        <a href="#who_">
+            <img loading="lazy" src="icons/Ellipse 1.svg" alt="icon arrow down">
+        </a>
     </div>
-    <section class="who_  ">
-        <div class="container horizontal paddingSection ">
-            <div class="who_containertexts alingcenter">
+    <section id="who_" class="who_ maxwidth">
+        <div  class="container horizontal paddingSection ">
+            <div data-aos="fade-right" class="who_containertexts alingcenter">
                 <h2 class="who_containertexts--title title ">Who We Are</h2>
                 <p class="who_containertexts--text">Atlantic Sotheby’s International Realty is a full-service real estate brokerage and property management firm headquartered in Virginia Beach. We proudly serve the entire greater Hampton Roads area.</p>
             </div>
-            <picture class="who_contanierimg" loading="lazy">
-                <img loading="lazy" class="responsive" src="/images/Atlantic_desktop.png" alt="ASIS office">
+            <picture data-aos="fade-left" class="who_contanierimg" loading="lazy">
+                <source media="(min-width:650px)" srcset="images/Atlantic_desktop.webp">
+                <img loading="lazy" class="responsive" src="images/Atlantic_tablet.webp" alt="ASIS office">
             </picture>
         </div>
-        <div class="container horizontal paddingSection">
+        <div data-aos="fade-up" class="container horizontal paddingSection">
             <picture class="who_contanierimg" loading="lazy">
-                <img loading="lazy" class="responsive" src="/images/phil kazmierczak - achievement@2x.png" alt="ASIS office">
+                <source media="(min-width:650px)" srcset="images/philkazmierczak-achievement-desktop.webp">
+                <img loading="lazy" class="responsive" src="images/philkazmierczak-achievement-tablet.webp" alt="ASIS office">
             </picture>
             <div class="who_containertexts alingcenter">
                 <p class="who_containertexts--text colorTextBlue">Our team of expert Hampton Roads property managers is led by Hampton Roads REALTORS association distinguished property manager of the year 2021.
@@ -68,45 +74,46 @@
             </div>
         </div>
     </section>
-    <section class="what_our">
+    <section class="what_our maxwidth">
         <div class=" what_our--container">
             <h2 class="what_our--container--title title">What Our Clients Say About Us</h2>
-            <div id="scroll" class="what_our--scroll">
-                <div>
-                   <img loading="lazy" src="/icons/next.png" alt="button next">
-                   <img loading="lazy" src="/icons/next.png" alt="button previos">
+            <div  class="what_our--scroll">
+                <div class="menuscroll">
+                   <img id="scrollleft" loading="lazy" src="icons/next.webp" alt="button next">
+                   <img id="scrollright" loading="lazy" src="icons/next.webp" alt="button previos">
                 </div>
+                <div id="contentscroll" class="scroll-container">
                 <article class="what_our__box marginLef" >
                     <h3 class="what_our__box--title">Christine L.</h3>
                     <span class="what_our__box--stars">★ ★ ★ ★ ★</span>
                     <p class="what_our__box--message">"I'm so pleased. I have to tell you, Phil, You are awesome!"</p>
-                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="/icons/facebook_icon.png" alt="facebook icon">
+                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="icons/facebook_icon.webp" alt="facebook icon">
                 </article>
                 <article class="what_our__box">
                     <h3 class="what_our__box--title">Christine L.</h3>
                     <span class="what_our__box--stars">★ ★ ★ ★ ★</span>
                     <p class="what_our__box--message">"I'm so pleased. I have to tell you, Phil, You are awesome!"</p>
-                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="/icons/facebook_icon.png" alt="facebook icon">
+                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="icons/facebook_icon.webp" alt="facebook icon">
                 </article>
                 <article class="what_our__box">
                     <h3 class="what_our__box--title">Christine L.</h3>
                     <span class="what_our__box--stars">★ ★ ★ ★ ★</span>
                     <p class="what_our__box--message">"I'm so pleased. I have to tell you, Phil, You are awesome!"</p>
-                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="/icons/facebook_icon.png" alt="facebook icon">
+                    <img loading="lazy" class="what_our__box--img" loading="lazy" src="icons/facebook_icon.webp" alt="facebook icon">
                 </article>
                 <article class="what_our__box">
                     <h3 class="what_our__box--title">Christine L.</h3>
                     <span class="what_our__box--stars">★ ★ ★ ★ ★</span>
                     <p class="what_our__box--message">"I'm so pleased. I have to tell you, Phil, You are awesome!"</p>
-                    <img loading="lazy" class="what_our__box--img "loading="lazy" src="/icons/facebook_icon.png" alt="facebook icon">
+                    <img loading="lazy" class="what_our__box--img "loading="lazy" src="icons/facebook_icon.webp" alt="facebook icon">
                 </article>
                 <article class="what_our__box">
                     <h3 class="what_our__box--title">Christine L.</h3>
                     <span class="what_our__box--stars">★ ★ ★ ★ ★</span>
                     <p class="what_our__box--message">"I'm so pleased. I have to tell you, Phil, You are awesome!"</p>
-                    <img loading="lazy" class="what_our__box--img "loading="lazy" src="/icons/facebook_icon.png" alt="facebook icon">
+                    <img loading="lazy" class="what_our__box--img "loading="lazy" src="icons/facebook_icon.webp" alt="facebook icon">
                 </article>
-                
+                </div>
             </div>
         </div>
     </section>
@@ -117,28 +124,28 @@
                 <div class="card_container alingCenter" >
                     <div class="card">
                         <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="/icons/electronic_rentalx2.png" alt="electronic rental icon">
+                            <img loading="lazy" src="icons/electronic_rentalx2.webp" alt="electronic rental icon">
                         </figure>
                         <h3 class="card__title">Electronic Rental <br> Payments</h3>
                         <p class="card__text">Convenient and free electronic payments when made with E-Check.</p>
                     </div>
                     <div class="card">
                         <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="/icons/24r_emergency.png" alt="24r emergency icon">
+                            <img loading="lazy" src="icons/24r_emergency.webp" alt="24r emergency icon">
                         </figure>
                         <h3 class="card__title">24hr Emergency<br>                            Response Center</h3>
                         <p class="card__text">Day or night, your home is always protected.</p>
                     </div>
                     <div class="card">
                         <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="/icons/Bi_anual_Property_inspection.png" alt="Bi anual Property inspection icon">
+                            <img loading="lazy" src="icons/Bi_anual_Property_inspection.webp" alt="Bi anual Property inspection icon">
                         </figure>
                         <h3 class="card__title">Bi-Annual Property<br>Inspection</h3>
                         <p class="card__text">Every 6 months, we do an inspection of your property.</p>
                     </div>
                 </div>
                 <div class="center">
-                    <a class="btn blue">Get a Free Quote</a>
+                    <a href="#main" class="btn blue">Get a Free Quote</a>
                 </div>
                 
         </div> 
@@ -147,9 +154,9 @@
         <div class="container maxwidth paddingSection alingcenter">
             <h2 class="title">Awards</h2>
             <figure class="Awards__brands gridauto brands">
-                <img loading="lazy" src="/images/buying-and-realtor-mls-logo-png-24.png" alt="logo buying-and-realtor">
-                <img loading="lazy" src="/images/circle-of-ex.png" alt="logo circle-of-ex">
-                <img loading="lazy" src="/images/HRRA.png" alt="logo HRRA ">
+                <img loading="lazy" src="images/buying-and-realtor-mls-logo-png-24.webp" alt="logo buying-and-realtor">
+                <img loading="lazy" src="images/circle-of-ex.webp" alt="logo circle-of-ex">
+                <img loading="lazy" src="images/HRRA.webp" alt="logo HRRA ">
             </figure>
         </div>
     </section>
@@ -159,33 +166,33 @@
             <div class="OurProperty__list--container gridauto OurProperty">
                 <div class="OurProperty__list">
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 1- our property.png" alt="step 1- our property">
+                        <img loading="lazy" src="icons/step 1- our property.webp" alt="step 1- our property">
                         <h3>Comprehensive market review of your home and neighbornhood</h3>
                     </article>
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 2- our property.png" alt="step 2- our property">
+                        <img loading="lazy" src="icons/step 2- our property.webp" alt="step 2- our property">
                         <h3>We will present to you a custom property management agreement whit our scope of services, costs and what is needed from you</h3>
                     </article>
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 3- our property.png" alt="step 3- our property">
+                        <img loading="lazy" src="icons/step 3- our property.webp" alt="step 3- our property">
                         <h3>Well we do a site visit to ensure your property is ready for tenants and guide you with anything that needs done prior to your home being marketed for rent</h3>
                     </article>
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 4- our property.png" alt="step 4- our property">
+                        <img loading="lazy" src="icons/step 4- our property.webp" alt="step 4- our property">
                         <h3>Photography is scheduled</h3>
                     </article>
                 </div>
                 <div class="OurProperty__list">
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 5- our property.png" alt="step 5- our property">
+                        <img loading="lazy" src="icons/step 5- our property.webp" alt="step 5- our property">
                         <h3>Your home is on the market within 48-72 hours of photography</h3>
                     </article>
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 6- our property.png" alt="step 6- our property">
+                        <img loading="lazy" src="icons/step 6- our property.webp" alt="step 6- our property">
                         <h3>Showings begin</h3>
                     </article>
                     <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="/icons/step 7- our property.png" alt="step 7- our property">
+                        <img loading="lazy" src="icons/step 7- our property.webp" alt="step 7- our property">
                         <h3>Your home gets rented!</h3>
                     </article>
                 </div>
@@ -235,11 +242,11 @@
         <nav class="footer__container gridauto footer container maxwidth paddingSection">
             <div class="footer__container-sub">
                 <figure class="container__img " loading="lazy">
-                    <img loading="lazy" src="/images/Atlantic Sotheby's International Realty.svg" alt="logo Atlantic Sotheby's International ">
+                    <img loading="lazy" src="images/Atlantic Sotheby's International Realty.svg" alt="logo Atlantic Sotheby's International ">
                     <figcaption class="footer__container--copy">Atlantic Sotheby’s International Realty is committed to compliance with all federal, state, and local fair housing laws.  Atlantic Sotheby’s International Realty will not discriminate against any person because of race, color, religion, national origin, sex, familial status, disability, or any other specific classes protected by applicable laws.</figcaption>
                 </figure>
                 <figure class="container__img " loading="lazy">
-                    <img loading="lazy" loading="lazy" src="/images/best property management.png" alt="logo best property management">
+                    <img loading="lazy" loading="lazy" src="images/best property management.webp" alt="logo best property management">
                     <figcaption>© All Rights Reserved. Privacy Policy</figcaption>
                 </figure>
             </div>
@@ -279,7 +286,7 @@
                     <li>
                         <form class="footer__form" action="email">
                             
-                            <input class="footer__form--input form__input" type="email" name="email" placeholder="Enter your email">
+                            <input class="footer__form--input form__input" type="email" name="email" placeholder="Enter your email" required>
                             <input class="footer__form--submit btn blue"  type="submit" value="Subscribe">
                         </form>
                     </li>
@@ -287,6 +294,6 @@
             </div>
         </nav>
     </footer>
-<script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
