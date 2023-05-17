@@ -19,62 +19,104 @@
             <figure class="header__container--logo">
                 <img loading="lazy" src="images/Atlantic Sotheby's International Realty.svg" alt="Atlantic Sotheby's  Logo">
             </figure>
-            <menu class="menu horizontal">
-                <a href="tel:+(757)777-9898">
-                    <img loading="lazy" src="icons/Group 2@2x.webp" alt="icon phone">
-                    <a href="tel:(757)777-9898">757.777.9898</a>
+            <nav class="flex gap">
+                <button class="McButton" id="McButton"  aria-label="hambuerguer menu">
+                    <b id="McBar1"></b>
+                    <b id="McBar2"></b>
+                    <b id="McBar3"></b>
+                </button>
+                <ul id="menu--items" class="menu-items flex">
+                    <li>
+                        <menu class="menu horizontal">
+                        <a href="tel:+(757)777-9898">
+                            <img loading="lazy" src="icons/icon phone.svg" alt="icon phone">
+                            <a href="tel:(757)777-9898">757.777.9898</a>        
+                        </a>
+                       
+                    </menu></li>
+                    <li><a href="http://">About Us</a></li>
+                    <li><a href="http://">Listings</a></li>
+                    <li><a href="http://">Services</a></li>
+                    <li><a href="http://">Agent Referral</a></li>
+                    <li><a href="http://">Faqs</a></li>
 
-                </a>
-            </menu>
+                </ul>
+
+            </nav>
+           
         </div>
     </header>
     <main id="main" class="main maxwidth">
         <div class="main__container ">
-            <h1>Owners, Get Your<br>
-            Free Rental Analysis</h1>
-            <p> We'll rent your house out in 2 weeks... or your first month of management is free.</p>
-            <b class="form__label">Enter the street address of your rental property to get your free quote</b>
-            <form class="form horizontal" action="https://example.com" method="post">
-                <input class="form__input" type="email" name="email" placeholder="Address of your rental home..." required>
-                <input id="submit" class="form__submit"  type="submit" value="Get a Free Quote">
-            </form>
+            <h1>Property Management<br> Made Simple</h1>
+            <p>Your hassle - free revenuew starts here </p>
+            <a href="#rentWithUs" class="btn yellow">Rent With Us</a>
         </div>
-        <video data-aos="fade-up" id="video-main" preload="none" class="video-container" width="320" height="240" controls poster="images/poster-main-video.webp">
-            <source src="video/Whatourclientssayaboutus-desktop.mp4" type="video/mp4">
-            <source src="video/What our clients say about us - mobile.mp4" type="video/mp4">
-        </video>        
+        <div class="overlay"></div>       
     </main>
-    <div class="btn_arrow alingCenter">
-        <a href="#who_">
-            <img loading="lazy" src="icons/Ellipse 1.svg" alt="icon arrow down">
-        </a>
-    </div>
-    <section id="who_" class="who_ maxwidth">
-        <div  class="container horizontal paddingSection ">
-            <div data-aos="fade-right" class="who_containertexts alingcenter">
-                <h2 class="who_containertexts--title title ">Who We Are</h2>
-                <p class="who_containertexts--text">Atlantic Sotheby’s International Realty is a full-service real estate brokerage and property management firm headquartered in Virginia Beach. We proudly serve the entire greater Hampton Roads area.</p>
-            </div>
-            <picture data-aos="fade-left" class="who_contanierimg" loading="lazy">
-                <source media="(min-width:650px)" srcset="images/Atlantic_desktop.webp">
-                <img loading="lazy" class="responsive" src="images/Atlantic_tablet.webp" alt="ASIS office">
+    <section class="many_reason center">
+        <div class="container maxwidth paddingSection">
+            <h2 class="title">Are you ready to turn your property<br> into a money making machine?</h2>
+            <p class="center">This is How we do it for you</p>
+            <img src="images/How we do rent your property.webp" alt="How we do rent your property">                
+        </div> 
+    </section>
+    <section class="many_reason center">
+        <div class="container maxwidth paddingSection">
+            <h2 class="title">Why Work With Us</h2>
+                <div class="card_container alingCenter" >
+                    <div class="card">
+                        <figure class="card__img center" loading="lazy">
+                            <img loading="lazy" src="icons/icon-Fully Electronic Application.svg.svg" alt="electronic rental icon">
+                        </figure>
+                        <p class="card__text">Fully Electronic Application and Payment Processing means payments are more timely and you receive your rent FASTER!</p>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img center" loading="lazy">
+                            <img loading="lazy" src="icons/icon-05.svg.svg" alt="24r emergency icon">
+                        </figure>
+                        <p class="card__text">24/7 Emergency Response Center</p>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img center" loading="lazy">
+                            <img loading="lazy" src="icons/icon-06.svg.svg" alt="Bi anual Property inspection icon">
+                        </figure>
+                        <p class="card__text">Professional In-House Photography Team will showcase your home in its best light.</p>
+                    </div>
+                    <div class="card">
+                        <figure class="card__img center" loading="lazy">
+                            <img loading="lazy" src="icons/icon-07.svg.svg" alt="Bi anual Property inspection icon">
+                        </figure>
+                        <p class="card__text">Global brand support from Sotheby’s International Realty, the industry Leader among global real estate firms.</p>
+                    </div>
+                </div>
+        </div> 
+    </section>
+    <section class="services shadow">
+        <div class="container maxwidth flex">
+            <article class="copy-container">
+                <h2 class="subtitle">Full service property management</h2>
+                <p class="copy">Full scale property management including tenant placement and screening, leasing, lease enforcement, tenant disputes and collections, inspections, maintenance & repair.</p>
+                <a href="http://" class="btn yellow">Hire Us!</a>
+            </article>
+            <picture class="img-container">
+                <img src="images/Full servicesub property management.webp" alt="Full servicesub property management img">
             </picture>
-        </div>
-        <div data-aos="fade-up" class="container horizontal paddingSection">
-            <picture class="who_contanierimg" loading="lazy">
-                <source media="(min-width:650px)" srcset="images/philkazmierczak-achievement-desktop.webp">
-                <img loading="lazy" class="responsive" src="images/philkazmierczak-achievement-tablet.webp" alt="ASIS office">
-            </picture>
-            <div class="who_containertexts alingcenter">
-                <p class="who_containertexts--text colorTextBlue">Our team of expert Hampton Roads property managers is led by Hampton Roads REALTORS association distinguished property manager of the year 2021.
-                    <br><br>
-                    Under his leadership our team is improving the performance of over hundreds of residential properties for both investors and individuals.
-                    <br><br>
-                    We’re the experts local property management Hampton Roads owners and investors rely on for excellent professional service. We manage single family homes and smaller multi-unit properties up to 100+ units.</p>
-            </div>
         </div>
     </section>
-    <section class="what_our maxwidth">
+    <section class="services shadow">
+        <div class="container maxwidth flex row-reverse">
+            <article class="copy-container">
+                <h2 class="subtitle">Tenant Placement</h2>
+                <p class="copy">We provide photography, marketing and advertising, find your tenant, screen them, put them in your home and turn them over to the owner.</p>
+                <a href="http://" class="btn yellow">Hire Us!</a>
+            </article>
+            <picture class="img-container">
+                <img src="images/Tenant Placement.webp" alt="Tenant Placement img">
+            </picture>
+        </div>
+    </section>
+    <section class="what_our">
         <div class=" what_our--container">
             <h2 class="what_our--container--title title">What Our Clients Say About Us</h2>
             <div  class="what_our--scroll">
@@ -117,125 +159,19 @@
             </div>
         </div>
     </section>
-    <section class="many_reason center">
-        <div class="container maxwidth paddingSection">
-            <h2 class="title">Many Reasons To Hire Us.<br>
-                We're Your Best Local Option!</h2>
-                <div class="card_container alingCenter" >
-                    <div class="card">
-                        <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="icons/electronic_rentalx2.webp" alt="electronic rental icon">
-                        </figure>
-                        <h3 class="card__title">Electronic Rental <br> Payments</h3>
-                        <p class="card__text">Convenient and free electronic payments when made with E-Check.</p>
-                    </div>
-                    <div class="card">
-                        <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="icons/24r_emergency.webp" alt="24r emergency icon">
-                        </figure>
-                        <h3 class="card__title">24hr Emergency<br>                            Response Center</h3>
-                        <p class="card__text">Day or night, your home is always protected.</p>
-                    </div>
-                    <div class="card">
-                        <figure class="card__img center" loading="lazy">
-                            <img loading="lazy" src="icons/Bi_anual_Property_inspection.webp" alt="Bi anual Property inspection icon">
-                        </figure>
-                        <h3 class="card__title">Bi-Annual Property<br>Inspection</h3>
-                        <p class="card__text">Every 6 months, we do an inspection of your property.</p>
-                    </div>
-                </div>
-                <div class="center">
-                    <a href="#main" class="btn blue">Get a Free Quote</a>
-                </div>
-                
-        </div> 
-    </section>
-    <section class="Awards">
-        <div class="container maxwidth paddingSection alingcenter">
-            <h2 class="title">Awards</h2>
-            <figure class="Awards__brands gridauto brands">
-                <img loading="lazy" src="images/buying-and-realtor-mls-logo-png-24.webp" alt="logo buying-and-realtor">
-                <img loading="lazy" src="images/circle-of-ex.webp" alt="logo circle-of-ex">
-                <img loading="lazy" src="images/HRRA.webp" alt="logo HRRA ">
-            </figure>
-        </div>
-    </section>
-    <section class="OurProperty">
-        <div class="paddingSection maxwidth">
-            <h2 class="title white aligncenter">Our Property<br>Management Process In 7 Steps</h2>
-            <div class="OurProperty__list--container gridauto OurProperty">
-                <div class="OurProperty__list">
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 1- our property.webp" alt="step 1- our property">
-                        <h3>Comprehensive market review of your home and neighbornhood</h3>
-                    </article>
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 2- our property.webp" alt="step 2- our property">
-                        <h3>We will present to you a custom property management agreement whit our scope of services, costs and what is needed from you</h3>
-                    </article>
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 3- our property.webp" alt="step 3- our property">
-                        <h3>Well we do a site visit to ensure your property is ready for tenants and guide you with anything that needs done prior to your home being marketed for rent</h3>
-                    </article>
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 4- our property.webp" alt="step 4- our property">
-                        <h3>Photography is scheduled</h3>
-                    </article>
-                </div>
-                <div class="OurProperty__list">
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 5- our property.webp" alt="step 5- our property">
-                        <h3>Your home is on the market within 48-72 hours of photography</h3>
-                    </article>
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 6- our property.webp" alt="step 6- our property">
-                        <h3>Showings begin</h3>
-                    </article>
-                    <article class="OurProperty__list--step flex left">
-                        <img loading="lazy" src="icons/step 7- our property.webp" alt="step 7- our property">
-                        <h3>Your home gets rented!</h3>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="why__are_we">
-        <div class="container maxwidth paddingSection">
-            <h2 class="title aligncenter">Why Are We Chosen as The Best Property<br> Management Company in Hampton Roads?</h2>
-            <div class="why__are_weList gridauto whyarewe">
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Tenant Screening</h3>
-                    <p class="why__are_we--text">Comprehensive screening of your tenants credit history, bankruptcies, judgements, evictions, employment and rental history.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Dedicated Showing Agent</h3>
-                    <p class="why__are_we--text">We only show our own properties as we work for YOU.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Future Planning</h3>
-                    <p class="why__are_we--text">Roughly 90 days prior to any lease end, we will reach out to go through your future plans for your rental home.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Move In Inspection</h3>
-                    <p class="why__are_we--text">Professional move in inspection by a professional third party.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Owner Portal</h3>
-                    <p class="why__are_we--text">Your owner statement and financials are placed on an easy to use Owner Portal.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Financials</h3>
-                    <p class="why__are_we--text">You deserve to see all money in and all money out of your rental property including work order invoices. All of this is available in your monthly owner statement.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Rent/ Delinquency</h3>
-                    <p class="why__are_we--text">We are very aggressive in ensuring you are paid on time, every time, or we begin the legal process for you - at no charge.</p>
-                </article>
-                <article class="why__are_we--item">
-                    <h3 class="why__are_we--title">Co List For Sale/Or Rent</h3>
-                    <p class="why__are_we--text">You deserve options which is why if you can’t decide to rent or sell, we will do both and you can go with whichever happens first.</p>
-                </article>
-            </div>
+    <section class="services">
+        <div class="container maxwidth flex">
+            <article class="copy-container center">
+                <h2 class="subtitle ">Don’t waste anymore<br>
+                    TIME or MONEY!</h2>
+                <p class="copy  fullwidth">We are the experts when ir come to property<br>
+                    Management in Hampton Roads </p>
+                <a href="http://" class="btn yellow marginBottom">Hire Us Today!</a>
+                <p>Call us today for more information <a class="blueColor" href="tel:+(757) 777.9898"> <strong>(757) 777.9898</strong></a> </p>
+            </article>
+            <picture class="img-container center">
+                <img src="images/pic-07-rent-your-property 1.webp" alt="Tenant Placement img">
+            </picture>
         </div>
     </section>
     <footer class="footer">
@@ -295,5 +231,6 @@
         </nav>
     </footer>
     <script src="js/index.js"></script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>

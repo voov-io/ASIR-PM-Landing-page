@@ -3,17 +3,25 @@
 }
 .card_container{
     margin: 4.25em 0;
-    column-gap: 3em;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21rem,1fr));
 }
 .card{
-    max-width: 19.28em;
-    padding-bottom: 1.1em;
+    display: flex;
+    gap:1rem;
+    place-items: center;
+    padding: 2.5rem 1rem;
+    background-color: white;
+    box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+    -webkit-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+    -moz-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
 }
-.card__img{
-    margin-bottom: 1.5em;
-}
+
 .card__img img{
-    width: 6.75em;
+    width: 5rem;
+    height: auto;
+    margin: auto 0;
 }
 
 .card__title{
@@ -25,6 +33,7 @@
 .card__text{
     font-size: 1em;
     text-align: center;
+    width: 70%;
 }
 
 @media screen and (max-width:769px)  {

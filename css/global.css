@@ -7,6 +7,7 @@
     src: url("/font/IBM_Plex_Sans/IBMPlexSans-Bold.ttf") format("ttf")
 }
 :root{
+    font-size: 18px;
     --Yellowcolor:#FFC320;
     --Bluecolor:#005DCB;
     --BluecolorDark:#002A5C;
@@ -18,11 +19,11 @@
     --Greycolor:#EAEFF4;
     --padding:1.5em;
 
-    --title:'DM Serif Display', serif;
+    --title:'IBM Plex Sans', serif;
     --texts: 'IBM Plex Sans', sans-serif;
     --maxwith:1440px;
-    --marginBottomTittle:1em;
-    --titlesize: 3em;
+    --marginBottomTittle:4rem;
+    --titlesize: 2em;
 }
 
 body, *{
@@ -33,15 +34,24 @@ body, *{
     list-style: none;
     scroll-behavior: smooth;
 }
+img{
+    width: 100%;
+    height: auto;
+}
+p{
+    font-size: 1rem;
+}
 ul, li{
-    font-size: 16px;
+    font-size: 1rem;
     padding: 0;
     
 }
 picture, figure{
     overflow: hidden;
 }
-
+.gap{
+    gap: 2em;
+}
 .flex{
     display: flex;
     align-items: center;
@@ -81,6 +91,7 @@ picture, figure{
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .maxwidth{
@@ -90,7 +101,7 @@ picture, figure{
 }
 
 .paddingSection{
-    padding: 5em 2.5em;
+    padding: 2rem 2.5rem;
 }
 
 
@@ -122,6 +133,7 @@ picture, figure{
 .title{
     font-family: var(--title);
     font-size: var(--titlesize);
+    margin-bottom: 2rem;
     
 }
 .title.aligncenter{
@@ -136,13 +148,50 @@ picture, figure{
 }
 
 .btn{
-    padding: 1.5em 4em;
-    color:white;
+    padding: 1em 4em;
+    color:var(--BluecolorDark);
     font-weight:bold ;
-    font-size:1em;
+    font-size:1rem;
+    display: inline-block;
 }
 
 .btn.blue{
 
     background-color: var(--Bluecolor);
+}
+
+.btn.yellow{
+
+    background-color: var(--Yellowcolor);
+}
+
+.services{
+    margin-top: 1rem;
+}
+.copy-container, .img-container{
+    width: 50%;
+    display: inline-block;
+}
+.copy-container{
+    padding: 0 4rem;
+}
+.shadow{
+    box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+    -webkit-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+    -moz-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+.fullwidth{
+    width: 100%!important;
+}
+
+.blueColor{
+    color: var(--colorBluesky);
+}
+
+.marginBottom{
+    margin-bottom:2.5em ;
 }

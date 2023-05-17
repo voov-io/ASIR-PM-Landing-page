@@ -1,8 +1,3 @@
-.what_our{
-    background-color: var(--Greycolor);
-}
-
-
 .what_our--container{
     padding-top:5em ;
     padding-bottom: 5em;
@@ -29,6 +24,7 @@
     position: relative;
     max-width: 100%;
     white-space: normal;
+    margin-left: 2rem;
 }
 .what_our--scroll .menuscroll{
    display: flex;
@@ -40,7 +36,7 @@
 }
 .what_our--scroll .menuscroll img{
     padding: 3em 1em;
-    background-color: var(--Bluecolor30);
+    background-color: var(--BluecolorDark);
     cursor: pointer;
     width: 20px;
     height: 35px;
@@ -89,7 +85,12 @@
     width: 32px;
     height: 32px;
 }
-
+.subtitle,.copy{
+    padding-bottom: 2.5rem;
+}
+.copy{
+    width: 85%;
+}
 @media screen and (max-width:426px) {
     .what_our__box{
         min-width: 18em;
