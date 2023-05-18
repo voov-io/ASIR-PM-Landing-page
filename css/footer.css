@@ -1,12 +1,18 @@
 .footer{
     background-color: var(--BluecolorDark);
 }
-
+.footer__container-sub > * {
+    margin-bottom: 2rem;
+}
 .footer__container > div ul li, time, address, a {
     color: white;
     font-style: normal;
+    margin-bottom: 2rem;
 }
-
+.footer__container > div ul li{
+    display: flex;
+    gap: 1rem;
+}
 .footer__container > div h2 {
     color: var(--colorBluesky);
     text-align: left;
@@ -35,10 +41,14 @@
 }
 .gridauto.footer{
     column-gap:1em;
-    grid-template-columns: repeat(auto-fill,14em);
+    grid-template-columns: repeat(auto-fill,minmax(10em,1fr));
     justify-items: left;
     box-sizing: border-box;
     
+}
+.footer__container-sub:first-child{
+    grid-column-start: 1;
+    grid-column-end: 3;
 }
 .footer__container div:last-child{
     box-sizing: border-box;
@@ -65,3 +75,9 @@
     width: auto;
 }
 
+@media screen and (max-width:460px) {
+    .footer__container-sub:first-child {
+        grid-column-start: initial;
+        grid-column-end:initial;
+    }
+}

@@ -21,6 +21,7 @@ header menu{
 }
 .menu-items.active{
     display: flex;
+    z-index: 9;
 }
 
 .menu-items a{
@@ -42,6 +43,7 @@ menu a{
     font-size:24px;
     font-weight: 600;
     font-family: 'IBM Plex Sans', sans-serif;
+    margin-bottom: 0;
 
 }
 @media screen and (max-width:1060px) {
@@ -68,5 +70,9 @@ menu a{
     header .menu{
         justify-content: center;
         align-items: center;
+    }
+
+    .header__container--logo{
+        width: 80%;
     }
 }

@@ -16,8 +16,14 @@
     box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
     -webkit-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
     -moz-box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
+    transition: all ease .5s;
 }
-
+.card:hover{
+    transform: scale(1.03);
+    box-shadow: 0 16px 16px 1px rgba(190, 174, 174, 0.25);
+    -webkit-box-shadow: 0 16px 16px 1px rgba(190, 174, 174, 0.25);
+    -moz-box-shadow: 0 16px 16px 1px rgba(190, 174, 174, 0.25);
+}
 .card__img img{
     width: 5rem;
     height: auto;
@@ -40,11 +46,18 @@
     .card_container {
         column-gap: 1.5em;
     }
+    .card_container{
+        grid-template-columns: repeat(auto-fill, minmax(18rem,1fr));
+    }
 }
 
 @media screen and (max-width:426px){
+    .card__img img{
+        width: 3.5rem;
+    }
     .card_container.alingCenter{
         flex-direction: column;
+
     }
 }
 @media screen and (max-width:1025px) {
