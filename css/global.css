@@ -153,6 +153,8 @@ picture, figure{
     font-weight:bold ;
     font-size:1rem;
     display: inline-block;
+    transition: all ease .5s;
+    margin-bottom: 0;
 }
 
 .btn.blue{
@@ -164,7 +166,14 @@ picture, figure{
 
     background-color: var(--Yellowcolor);
 }
-
+menu{
+    transition: all ease .5s
+    
+    ; 
+}
+.btn:hover, menu:hover{
+    transform: scale(1.1);
+}
 .services{
     margin-top: 1rem;
 }
@@ -173,7 +182,7 @@ picture, figure{
     display: inline-block;
 }
 .copy-container{
-    padding: 0 4rem;
+    padding: 2rem 4rem;
 }
 .shadow{
     box-shadow: -2px -2px 16px 1px rgba(190, 174, 174, 0.25);
@@ -194,4 +203,56 @@ picture, figure{
 
 .marginBottom{
     margin-bottom:2.5em ;
+}
+
+.icon{
+    width: 20px!important;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+input{
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 2rem;
+    padding: .5rem;
+}
+::placeholder{
+    font-family: var(--texts);
+    font-size:1rem ;
+    color: var(--BluecolorDark);
+    font-weight: 400;
+}
+input:focus{
+    border: none!important;
+}
+
+@media screen and (max-width:768px) {
+    .flex{
+        flex-direction: column!important;
+    }
+
+    .copy{
+        width: 100%;
+    }
+    .copy-container{
+        width: 90%;
+    }
+    .copy-container, .paddingSection {
+        padding: .5rem;
+    }
+
+    .img-container{
+        margin: 1rem 0;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:365px) {
+    .copy-container, .paddingSection {
+        padding:0;
+    }
 }

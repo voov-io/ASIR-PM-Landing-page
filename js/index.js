@@ -7,7 +7,6 @@ document.addEventListener('click', (e) =>{
     if (e.target.matches("#scrollright")) {
         
         contenScroll.scrollLeft +=card.offsetWidth;
-        console.log(card.offsetWidth)
     }
     if (e.target.matches("#scrollleft")) {
         
