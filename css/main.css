@@ -3,7 +3,7 @@ main{
     justify-content: center;
     padding: 3.5em 2.5em ;
     height: 100vh;
-    background-image: url("/images/img-background-main-section.webp");
+    background-image: url("../images/img-background-main-section.webp");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
